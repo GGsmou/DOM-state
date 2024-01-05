@@ -1,6 +1,6 @@
 {
   "name": "dom-state",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple tool to manage JS state with data-attributes",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
