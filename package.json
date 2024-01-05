@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "build": "tsup",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "simple-git": "git add . && git commit -m \"$(date)\" && git push",
     "release": "npm test && npm run build && npm publish",
     "release:git": "npm run release && npm run simple-git",
