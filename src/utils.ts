@@ -2,7 +2,9 @@ import { Html } from './types';
 
 export const getAttribute = (attribute: string, element: HTMLElement) => {
   try {
-    return JSON.parse(element.getAttribute(attribute) || 'null') as any;
+    const value = element.getAttribute(attribute) || 'null';
+
+    return value === 'undefined' ? undefined : (JSON.parse(value) as any);
   } catch (e) {
     console.error(e);
   }

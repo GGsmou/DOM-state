@@ -31,5 +31,5 @@ export const useDomState = <T>(
 };
 
 export const getState = <T>(element: HTMLElement): T | null => {
-  return (getAttribute(DOM_STATE_ATTRIBUTE, element) as T) || null;
+  return getAttribute(DOM_STATE_ATTRIBUTE, element) as T | null;
 };
