@@ -2,6 +2,9 @@
   "name": "dom-state",
   "version": "1.0.1",
   "description": "Simple tool to manage JS state with data-attributes",
+  "keywords": [
+    "state"
+  ],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -11,7 +14,7 @@
   "scripts": {
     "build": "tsup",
     "test": "jest --passWithNoTests",
-    "simple-git": "git add . && git commit -m \"$(date)\" && git push",
+    "simple-git": "git add . && git commit -m \"some changes :)\" && git push",
     "release": "npm test && npm run build && npm publish",
     "release:git": "npm run release && npm run simple-git",
     "release:local": "npm test && npm run build && npm link"
